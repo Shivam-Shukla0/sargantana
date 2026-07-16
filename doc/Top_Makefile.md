@@ -20,3 +20,15 @@ Current recipies
 * strict_lint:                                                                  
     This script will lint all the Verilog and sv files with Verilator until an error is found. No artifacts are generated.
     **Files with tb_ and wip_ as prefix are excluded even if extension is .v or .sv**  
+* local_spyglass:
+    It will run a local Spyglass lint analysis through the script
+    ```/scripts/local_spy.sh```
+* remote_spyglass:
+    It will run the Spyglass CI analysis through the script
+    ```/scripts/spyglass_ci.sh```
+* init:
+    It will configure git to use the repository hooks
+    (```git config core.hooksPath .githooks```), enabling the pre-commit hook.
+* questa:
+    It will run the Questasim CI flow through the script
+    ```/scripts/questa_ci.sh```
